@@ -63,10 +63,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-CORS_ALLOWED_ORIGINS = [
-    'http://127.0.0.1:5501',
-    # Add any other allowed origins as needed
-]
 
 CSRF_TRUSTED_ORIGINS = ['https://flower-sell-website-drf-project.onrender.com']
 ROOT_URLCONF = "Happy_Flower.urls"
