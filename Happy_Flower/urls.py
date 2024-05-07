@@ -24,10 +24,11 @@ router = DefaultRouter() #router
 router.register('users', UserViewSet) #antena
 urlpatterns = [
     path("admin/", admin.site.urls),
-      path('', include(router.urls)),
-        path('flower/', include('category.urls')),
-        path('authenticate/', include('authentication.urls')),
-        path('order/', include('order.urls')),
+    path('', include(router.urls)),
+    path('flower/', include('category.urls')),
+    path('authenticate/', include('authentication.urls')),
+    path('order/', include('order.urls')),
+    path('contact/', include('contact.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
